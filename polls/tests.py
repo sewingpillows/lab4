@@ -17,4 +17,4 @@ class PollTestCase(TestCase):
         )
         self.assertEqual(
             question.question_text, "test_question?"
-        ).
+        )
