@@ -1,13 +1,13 @@
 from datetime import datetime
 from django.test import TestCase
 from .models import Question, Choice
-
+from django.utils import timezone
 # Create your tests here.
 class PollTestCase(TestCase):
     def setUp(self):
         Question.objects.create(
             question_text="test_question?",
-            pub_date=datetime.now()
+            pub_date=timezone.now
         )
 
     def test_question_text_valid(self):
