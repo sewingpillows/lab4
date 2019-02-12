@@ -7,8 +7,8 @@ class PollTestCase(TestCase):
     def setUp(self):
         Question.objects.create(
             question_text="test_question?",
-            pub_date=timezone.now
-        )
+            pub_date=timezone.now()
+    )
 
     def test_question_text_valid(self):
         """Question text should work"""
